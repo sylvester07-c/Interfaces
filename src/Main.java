@@ -9,7 +9,23 @@ public class Main {
         Trackable tracked = bird;
 
         animal.move();
+        flier.fly();
+        flier.land();
+        flier.takeOff();
+        tracked.track();
+
 
 
     }
+
+    private static void inFlight(FlightEnabled flier) {
+        flier.takeOff();
+        flier.fly();
+        if(flier instanceof Trackable tracked) {
+            tracked.track();
+        }
+        flier.land();
+
+    }
+
 }
