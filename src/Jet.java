@@ -1,4 +1,4 @@
-public class Jet implements FlightEnabled {
+public class Jet implements FlightEnabled, Trackable {
 
     @Override
     public void takeOff() {
@@ -12,6 +12,11 @@ public class Jet implements FlightEnabled {
 
     @Override
     public void fly() {
+
+    }
+
+    @Override
+    public void track() {
 
     }
 }
