@@ -1,11 +1,17 @@
 
-interface FlightEnabled {}
-
-interface Trackable {
+interface FlightEnabled {
 
     public abstract void takeOff();
 
     void land();
+    void fly();
+
+}
+
+interface Trackable {
+
+    void track ();
+
 
 
 }
